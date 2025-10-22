@@ -1,0 +1,85 @@
+.host-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.host-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 8px;
+
+  h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.2em;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.1em;
+    opacity: 0.9;
+  }
+}
+
+.host-main {
+  display: grid;
+  gap: 20px;
+}
+
+.host-content {
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+
+  h2 {
+    color: #333;
+    margin-bottom: 15px;
+  }
+
+  p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+}
+
+.host-button {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: #5a67d8;
+    transform: translateY(-2px);
+  }
+}
+
+.remote-section {
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 2px dashed #007acc;
+  margin-top: 20px;
+
+  h2 {
+    color: #007acc;
+    margin-bottom: 15px;
+  }
+
+  #remote-widget-container {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,34 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build Remote MFE",
+			"type": "shell",
+			"command": "cd remote-app && npm run build",
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Start Host App",
+			"type": "shell",
+			"command": "cd host-app && npm start",
+			"problemMatcher": [],
+			"group": "test",
+			"isBackground": true
+		},
+		{
+			"label": "Build All",
+			"type": "shell",
+			"command": "npm run build",
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}

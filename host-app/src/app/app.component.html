@@ -1,0 +1,34 @@
+<div class="host-container">
+
+  <header class="host-header">
+    <h1>Host Application - Micro Frontends Demo</h1>
+    <p>Esta é a aplicação host que consome micro frontends via Angular Elements</p>
+  </header>
+
+  <main class="host-main">
+    <section class="host-content">
+      <h2>Conteúdo do Host</h2>
+      <p>Este conteúdo pertence à aplicação host.</p>
+      <button (click)="toggleRemoteWidget()" class="host-button">
+        {{ showRemoteWidget ? 'Ocultar' : 'Mostrar' }} Micro Frontend
+      </button>
+    </section>
+
+    @if (showRemoteWidget) {
+      <section class="remote-section">
+        <h2>Micro Frontend Injetado</h2>
+        <div id="remote-widget-container">
+          <!-- O micro frontend será carregado aqui dinamicamente -->
+          <remote-widget 
+            title="Widget Remoto Dinâmico" 
+            message="Este widget foi carregado dinamicamente!">
+          </remote-widget>
+          <second-component 
+            title="Componente Secundário Injetado" 
+            message="Este é um segundo componente injetado via Angular Elements!">
+          </second-component>
+        </div>
+      </section>
+    }
+  </main>
+</div>

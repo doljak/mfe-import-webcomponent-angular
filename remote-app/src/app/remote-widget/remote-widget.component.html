@@ -1,0 +1,10 @@
+<div class="remote-widget">
+  <h2>{{ title }}</h2>
+  <p>{{ message }}</p>
+  <button (click)="sendMessage()">Interagir com o Widget</button>
+  <div class="counter">
+    <p>Contador: {{ counter }}</p>
+    <button (click)="increment()">+</button>
+    <button (click)="decrement()">-</button>
+  </div>
+</div>

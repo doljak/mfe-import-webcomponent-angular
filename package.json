@@ -1,0 +1,17 @@
+{
+  "name": "mfes-angular-elements",
+  "version": "1.0.0",
+  "description": "Micro Frontends with Angular Elements Demo",
+  "scripts": {
+    "start": "cd host-app && npm start",
+    "start:remote": "cd remote-app && npm start",
+    "build": "npm run build:remote && npm run build:host",
+    "build:remote": "cd remote-app && npm run build",
+    "build:host": "cd host-app && npm run build",
+    "install:all": "cd host-app && npm install && cd ../remote-app && npm install",
+    "dev": "concurrently \"npm run start:remote\" \"npm run start\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
